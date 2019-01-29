@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( image_construct )
+find_package( OpenCV REQUIRED )
+add_executable( image_construct image_construct.cc )
+target_link_libraries( image_construct ${OpenCV_LIBS} )
